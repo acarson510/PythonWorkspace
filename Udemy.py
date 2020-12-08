@@ -6,7 +6,7 @@ items = json.loads('[{"id":1,"text":"abc"}]')
 
 for item in items:
     print(item['text']) 
-
+#test
 myindex = ['USA','Canada',['Mexico']]
 mydata = [1776,1867,1821]
 myser = pd.Series(data=mydata, index=myindex)
