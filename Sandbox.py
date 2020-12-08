@@ -63,6 +63,26 @@ def phoneNumberCombinations(input):
         for sdm in secondDigitMapping:
             result.append(fdm + sdm)
     return result 
+    
+def listComprehension():
+    val = 3
+    nums = []
+    
+    nums.append(2)
+    nums.append(3)
+    nums.append(2)
+    nums.append(3)
+    
+    #b = [i for i, j in enumerate(['bar', 'bar', 'baz']) if j == 'bar']
+    
+    l = list(range(10))
+    # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print([i for i in l if i % 2 == 0])
+    # [0, 2, 4, 6, 8]
+       
+    b = [i for i, j in enumerate(nums) if j != val]
+    c = len(b), b
+    return c 
 
 
 a = Solution()
