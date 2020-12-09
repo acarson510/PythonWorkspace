@@ -1,6 +1,6 @@
 class Solution:
     
-    def some_function(a):
+    def some_function(self, a):
         return (a + 5) / 2
 
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -63,7 +63,7 @@ def phoneNumberCombinations(input):
         for sdm in secondDigitMapping:
             result.append(fdm + sdm)
     return result 
-    
+
 def listComprehension():
     val = 3
     nums = []
@@ -80,6 +80,7 @@ def listComprehension():
     print([i for i in l if i % 2 == 0])
     # [0, 2, 4, 6, 8]
        
+    #[ expression for item in list if conditional ]
     b = [i for i, j in enumerate(nums) if j != val]
     c = len(b), b
     return c 
